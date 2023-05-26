@@ -1,0 +1,36 @@
+<section *ngIf="!loggedIn || !exists; else elseBlock">You need to log in to view this page</section>
+<ng-template #elseBlock>
+    <section class="accountSection">
+        <mat-card>
+            <section>
+                {{ username }}
+            </section>
+            <section class="tiles">
+                <section class="tile">
+                    <section class="tileEntry">{{ followers }}</section>
+                    <section class="tileName">Followers</section>
+                </section>
+                <section class="tile">
+                    <section class="tileEntry">{{ follows }}</section>
+                    <section class="tileName">Follows</section>
+                </section>
+                <section class="tile">
+                    <section class="tileEntry">{{ projects }}</section>
+                    <section class="tileName">Projects</section>
+                </section>
+            </section>
+            <section class="tile" *ngIf="firstName || lastName">
+                <section class="tileName">Full name</section>
+                <section>
+                    {{ firstName | titlecase }}{{ middleName ? ' ' + middleName + ' ' : ' ' }}{{ lastName | titlecase }}
+                </section>
+            </section>
+            <section class="tile" *ngIf="yourAccount">
+                <section class="tileName">Email</section>
+                <section>{{ email }}</section>
+            </section>
+            <button *ngIf="yourAccount" routerLink="/edit-account">Edit details</button>
+            <button *ngIf="loggedIn && !yourAccount" (click)="onFollow()">{{ follow }}</button>
+        </mat-card>
+    </section>
+</ng-template>

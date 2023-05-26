@@ -1,0 +1,66 @@
+.contentCardImage {
+    height: 250px;
+
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+
+    border-radius: 10px;
+}
+
+.contentCardInfo {
+    width: auto;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.contentCardTitle > h1 {
+    font-size: 2rem;
+    margin: 0;
+}
+
+.contentCardText {
+    height: 100%;
+}
+
+.contentCardTags {
+    display: flex;
+}
+
+.contentTags {
+    height: fit-content;
+
+    list-style: none;
+    padding: 0;
+
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.contentTag {
+    padding: 10px;
+
+    display: inline-block;
+
+    border-radius: 20px;
+}
+
+.contentTag:first-child {
+    background-color: red;
+}
+
+.contentTag {
+    background-color: green;
+}
+
+.contentTag h4 {
+    margin: 0;
+}
+
+.dateTag {
+    width: fit-content;
+
+    margin: auto 0 0 auto;
+}

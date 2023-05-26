@@ -1,0 +1,94 @@
+<section id="uploadPage">
+    <h2 class="uploadTitle">Post your Project</h2>
+    <form [formGroup]="uploadForm" (ngSubmit)="uploadContent()">
+        <section class="uploadBox">
+            <a href="/account"><img class="profileImg" src="assets/user.png" alt="My Image" /></a>
+            <p class="accountUsername">Youri Janssen</p>
+            <p class="contentTitleInner">Project Title:</p>
+            <input
+                ngModel
+                type="text"
+                id="contentTitle"
+                name="contentTitle"
+                formControlName="contentTitle"
+                placeholder="Please fill in your Title.."
+            />
+            <p class="textTitleInner">Project content:</p>
+            <input
+                ngModel
+                type="text"
+                id="contentText"
+                name="contentText"
+                formControlName="contentText"
+                placeholder="Tell us about your project.."
+            />
+
+            <p class="titleSDG">Sustainable Development Goal:</p>
+            <select name="SDG" id="selectBox" formControlName="dropdownSDG">
+                <option value="" selected disabled>Select your SDG:</option>
+                <option *ngFor="let SDG of SDGs">{{ SDG.title }}</option>
+            </select>
+
+            <p class="titleSubject">Subject Area:</p>
+            <select name="subject" id="selectBox" formControlName="dropdownSubject">
+                <option value="" selected disabled>Select your Subject Area:</option>
+                <option *ngFor="let subject of Subjects">{{ subject.title }}</option>
+            </select>
+            <p class="titleJPEG">Photo URL:</p>
+
+            <input
+                ngModel
+                type="text"
+                id="photoURL"
+                name="photoURL"
+                formControlName="contentMedia"
+                placeholder="Paste photo URL here.."
+            />
+            <p></p>
+            <section id="validatorContainer">
+                <section
+                    [ngClass]="contentTitle?.errors?.['required'] || contentTitle?.errors?.['minlength'] || contentTitle?.errors?.['maxLength'] ? 'alert-danger' : 'alert-succes'"
+                >
+                    <i class="material-icons">
+                        {{ contentTitle?.errors?.['required'] ? "cancel" : "check_circle" }}
+                    </i>
+                    Title must have at least 5 and a maximum of 250 characters.
+                </section>
+
+                <section
+                    [ngClass]="contentText?.errors?.['required'] || contentText?.errors?.['minlength'] || contentText?.errors?.['maxlength'] ? 'alert-danger' : 'alert-succes'"
+                >
+                    <i class="material-icons">
+                        {{ contentText?.errors?.['required'] ? "cancel" : "check_circle" }}
+                    </i>
+                    Content must have at least 5 and a maximum of 2500 characters.
+                </section>
+                <section [ngClass]="dropdownSDG?.errors?.['required'] ? 'alert-danger' : 'alert-succes'">
+                    <i class="material-icons">
+                        {{ dropdownSDG?.errors?.['required'] ? "cancel" : "check_circle" }}
+                    </i>
+                    Please select a Sustainable Development Goal.
+                </section>
+
+                <section [ngClass]="dropdownSubject?.errors?.['required'] ? 'alert-danger' : 'alert-succes'">
+                    <i class="material-icons">
+                        {{ dropdownSubject?.errors?.['required'] ? "cancel" : "check_circle" }}
+                    </i>
+                    Please select a Subject Area.
+                </section>
+
+                <section [ngClass]="contentMedia?.errors?.['required'] ? 'alert-danger' : 'alert-succes'">
+                    <i class="material-icons">
+                        {{ contentMedia?.errors?.['required'] ? "cancel" : "check_circle" }}
+                    </i>
+                    Please provide a photo URL.
+                </section>
+            </section>
+            <p></p>
+            <button [disabled]="!uploadForm.valid" type="submit" class="uploadButton">Upload</button>
+        </section>
+    </form>
+    <section *ngIf="submitted" class="submitOutput">
+        <app-alert [alertType]="cssClass" [message]="errorMessage"></app-alert>
+    </section>
+</section>

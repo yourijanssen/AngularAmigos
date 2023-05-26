@@ -1,0 +1,16 @@
+<div class="navbar">
+    <section id="left-container">
+        <a routerLink="/home" class="navbar-home"><button>Home</button></a>
+        <input type="text" placeholder="Search ..." class="search-bar" />
+        <a href="#" class="navbar-search"><button>Search</button></a>
+    </section>
+
+    <section id="right-container">
+        <a routerLink="/SDG" class="right-buttons"><button>What are SDG's?</button></a>
+        <a routerLink="/contact" class="right-buttons"><button>Contact</button></a>
+        <a *ngIf="!loggedIn" routerLink="/register" class="right-buttons"><button>Register</button></a>
+        <a *ngIf="!loggedIn" routerLink="/login" class="right-buttons"><button>Login</button></a>
+        <a *ngIf="loggedIn" routerLink="/account" class="right-buttons"><button>Account</button></a>
+        <a *ngIf="loggedIn" (click)="logOut()" class="right-buttons"><button>Logout</button></a>
+    </section>
+</div>

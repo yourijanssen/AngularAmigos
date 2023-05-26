@@ -1,0 +1,66 @@
+.noContent {
+    margin-inline: auto;
+    font-family: "roboto", 'sans-serif';
+}
+
+.contentCardList {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+  
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.contentCard {
+    min-height: 250px;
+    height: fit-content;
+    min-width: fit-content;
+
+    display: grid;
+    grid-template-columns: 250px auto;
+    gap: 10px;
+
+    border: 2px solid black;
+    border-radius: 20px;
+
+    background-color: white;
+    padding: 25px;
+
+    font-family: 'Roboto', 'sans-serif';
+
+    transition-duration: .15s;
+}
+
+.contentCard:hover {
+    scale: 1.015;
+
+    cursor: pointer;
+
+    background-color: #eeeeee;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+}
+
+.loadMoreButton {
+    width: fit-content;
+
+    margin: 25px auto 25px auto;
+}
+
+.loadMoreButton > button {
+    width: 250px;
+    height: 50px;
+
+    background-color: white;
+    border: 2px solid black;
+    border-radius: 10px;
+
+    font-size: large;
+    font-weight: 1000;
+}
+
+.loadMoreButton > button:hover {
+    cursor: pointer;
+    background-color: #eeeeee;
+}

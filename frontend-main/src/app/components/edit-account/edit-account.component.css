@@ -1,0 +1,99 @@
+
+
+.editSection,
+.registerSection {
+  display: flex;
+  justify-content: center;
+  margin: 175px 0px;
+  /* margin-top: 5.5rem; */
+}
+
+label {
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+select {
+  width: 100%;
+  padding: 0.5rem;
+}
+
+a {
+  cursor: pointer;
+}
+button {
+  background-color: #eee;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  color: black;
+  font-size: 1.2rem;
+  padding: 1rem;
+  margin-right: 1rem;
+  margin-bottom: 1rem;
+  margin-top: 1rem;
+}
+button:hover {
+  background-color: black;
+  color: white;
+}
+button:disabled {
+  background-color: #eee;
+  color: #aaa;
+  cursor: auto;
+}
+
+.alert-danger {
+  background-color: #fed3d3;
+  color: #820000;
+  padding: 10px;
+}
+
+.alert-succes {
+  background-color: #d3fed5;
+  color: #42a948;
+  padding: 10px;
+}
+
+.submitOutput {
+  max-width: 500px;
+  margin: auto;
+  margin-bottom: 0.5rem;
+}
+
+.mat-form-field {
+  /* padding: 200px; */
+  width: 100%;
+}
+
+mat-card {
+  padding: 20px;
+  padding-left: 50px;
+  padding-right: 50px;
+  border-color: black;
+  border-width: 1px;
+  border-style: solid;
+}
+
+mat-card-title,
+mat-card-content {
+  display: flex;
+  justify-content: center;
+}
+
+mat-form-field{
+width: 500px;
+}
+
+
+.error {
+  padding: 16px;
+  width: 300px;
+  color: white;
+  background-color: red;
+}
+
+.button {
+  display: flex;
+  justify-content: flex-end;
+}

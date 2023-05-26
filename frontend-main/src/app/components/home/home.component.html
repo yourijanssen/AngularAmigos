@@ -1,0 +1,7 @@
+<h1 class="pageTitle">Content</h1>
+<section class="content">
+    <app-amount-of-results-dropdown
+        (changeAmountOfResults)="setAmountOfResults($event)"
+    ></app-amount-of-results-dropdown>
+    <app-content-list [amountOfResults]="amountOfResults"></app-content-list>
+</section>

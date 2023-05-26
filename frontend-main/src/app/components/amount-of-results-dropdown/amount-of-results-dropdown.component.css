@@ -1,0 +1,37 @@
+.optionButtons {
+    height: fit-content;
+
+    background-color: white;
+    border: 2px solid black;
+    border-radius: 20px;
+
+    display: flex;
+    justify-content: center;
+
+    position: sticky;
+    top: 100px;
+}
+
+.optionButtons h3 {
+    font-family: "Roboto", "sans-serif";
+    margin: 0;
+}
+
+.amountOfResultsDropdown {
+    width: 75px;
+    height: 30px;
+
+    background-color: white;
+
+    border: 2px solid black;
+    border-radius: 10px;
+
+    font-size: large;
+    font-weight: 1000;
+    text-align: center;
+}
+
+.amountOfResultsDropdown:hover {
+    cursor: pointer;
+    background-color: #eeeeee;
+}

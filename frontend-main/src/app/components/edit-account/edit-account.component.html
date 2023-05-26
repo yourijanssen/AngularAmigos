@@ -1,0 +1,31 @@
+<section class="editSection">
+    <mat-card>
+        <section *ngIf="feedbackMessage !== ''" class="submitOutput">
+            <app-alert [alertType]="cssClass" [message]="feedbackMessage"></app-alert>
+        </section>
+        <mat-card-title>Edit account details</mat-card-title>
+        <mat-card-content>
+            <form (ngSubmit)="onSave(f)" #f="ngForm">
+                <label for="username">Username:</label>
+                <mat-form-field>
+                    <input matInput type="text" id="username" name="username" [ngModel]="username" />
+                </mat-form-field>
+                <label for="firstName">First name:</label>
+                <mat-form-field>
+                    <input matInput type="text" id="firstName" name="firstName" [ngModel]="firstName" />
+                </mat-form-field>
+                <label for="middleName">Middle name:</label>
+                <mat-form-field>
+                    <input matInput type="text" id="middleName" name="middleName" [ngModel]="middleName" />
+                </mat-form-field>
+                <label for="lastName">Last name:</label>
+                <mat-form-field>
+                    <input matInput type="text" id="lastName" name="lastName" [ngModel]="lastName" />
+                </mat-form-field>
+                <section>
+                    <button type="submit">Save</button>
+                </section>
+            </form>
+        </mat-card-content>
+    </mat-card>
+</section>

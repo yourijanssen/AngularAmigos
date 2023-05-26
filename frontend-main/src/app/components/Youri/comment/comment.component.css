@@ -1,0 +1,87 @@
+#commentSection {
+      margin-top: 50px;
+      text-align: center;
+      margin-bottom: 100px;
+  }
+  
+  .commentTitle {
+      font-size: 55px;
+      width: 500px;
+      height: 40px;
+      margin-top: -20px;
+      margin-left: auto;
+      margin-right: auto;
+      /* padding-top: 10px; */
+      border-radius: 10px;
+      text-align: center;
+      font-weight: bold;
+      padding-top: 10px;
+  }
+  
+  .commentBox {
+      display: grid;
+      grid-template-columns: 160px 690px ;  
+      grid-template-rows: 60px 110px 420px 70px 70px 70px 180px;
+      border-radius: 10px;
+      height: 900px;
+      border: 2px solid #A1A6B4;
+      margin-right: auto;
+      margin-left: auto;
+      margin-bottom: 30px;
+      max-width: 850px;
+      background-color: #F8F8F8;
+  }
+  
+  .amountTitle {
+      margin-left: 56px;
+      margin-top: 40px;
+      font-weight: bold;
+  }
+  
+  .totalAmount {
+      margin-left: -650px;
+      margin-top: 40px;
+      font-weight: bold;
+  }
+  
+  .currentProfile {
+      width: 35px;
+      height: 35px;
+      margin-top: 20px;
+      margin-left: 56px;
+  }
+  
+  #commentPostSection {
+      margin-left: -115px;
+      margin-top: 15px;
+  }
+  
+  #commentInputField {
+      height: 30px;
+      width: 500px;
+      margin-top: auto;
+      margin-bottom: auto;
+      margin-left: -70px;
+       border-top: none;
+       border-left: none;
+       border-right: none;
+       background-color: #F8F8F8;
+       border-color: #000100;
+  }
+  
+  .commentButtons {
+      margin-right: -275px;
+  }
+  .commentPost {
+      width: 80px;
+      height: 30px;
+      margin-top: 15px;
+      background-color: #A1A6B4;
+      color: #000100;
+      border: none;
+      border-radius: 10%;
+      cursor: pointer;
+      font-weight: bold;
+      margin-right: 15px;
+  }
+  

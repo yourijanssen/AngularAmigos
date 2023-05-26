@@ -1,0 +1,32 @@
+<br /><br /><br />
+<!-- Start of comment title section -->
+<section id="commentSection">
+    <h2 class="commentTitle">Post a comment</h2>
+    <!-- Start of comment box section -->
+    <section class="commentBox">
+        <!-- Start of total comment count section -->
+        <p class="amountTitle">Comment(s):</p>
+        <p class="totalAmount">1</p>
+
+        <!-- start of add a comment section-->
+        <a href="/account"><img class="currentProfile" src="assets/user.png" alt="My Image" /></a>
+        <section id="commentPostSection">
+            <form [formGroup]="commentBody" (ngSubmit)="postComment()">
+                <input
+                    [(ngModel)]="commentText"
+                    type="text"
+                    id="commentInputField"
+                    name="commentInputField"
+                    placeholder="Add a comment..."
+                    formControlName="commentInputField"
+                />
+                <section class="commentButtons">
+                    <button (click)="clear()" class="commentPost">Cancel</button>
+                    <button type="submit" class="commentPost">Post</button>
+                </section>
+            </form>
+        </section>
+        <p></p>
+        <app-reply></app-reply>
+    </section>
+</section>

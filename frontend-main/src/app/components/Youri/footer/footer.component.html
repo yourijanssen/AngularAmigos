@@ -1,0 +1,13 @@
+<div class="footer">
+    <a routerLink="/home" class="footer-links">Home</a>
+    <a routerLink="/terms" class="footer-links">Terms & Conditions</a>
+    <a routerLink="/contact" class="footer-links">Contact</a>
+    <a routerLink="/SDG" class="footer-links">What are SDG's?</a>
+    <a routerLink="project" class="footer-links">Project</a>
+
+    <a *ngIf="!loggedIn" routerLink="/register" class="footer-links">Register</a>
+    <a *ngIf="!loggedIn" routerLink="/login" class="footer-links">Login</a>
+    <a *ngIf="loggedIn" routerLink="/admin" class="footer-links">Admin-panel</a>
+    <a *ngIf="loggedIn" routerLink="/edit-account" class="footer-links">Account</a>
+    <a *ngIf="loggedIn" routerLink="/upload" class="footer-links">Upload</a>
+</div>

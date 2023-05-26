@@ -1,0 +1,152 @@
+
+#uploadPage {
+      margin-top: 100px;
+      text-align: center;
+      margin-bottom: 100px;
+}
+
+.uploadTitle {
+      font-size: 55px;
+      width: 500px;
+      height: 40px;
+      margin-top: -20px;
+      margin-left: auto;
+      margin-right: auto;
+      /* padding-top: 10px; */
+      border-radius: 10px;
+      text-align: center;
+      font-weight: bold;
+      padding-top: 10px;
+}
+
+.uploadBox {
+       display: grid;
+       grid-template-columns: 230px 620px ;  
+       grid-template-rows: 70px 70px 270px 70px 70px 70px 180px;
+      /* flex-direction: column;
+      align-items: center;  */
+      border: 2px solid #A1A6B4;
+      border-radius: 10px;
+      height: 900px;
+      margin-right: auto;
+      margin-left: auto;
+      margin-bottom: 30px;
+      max-width: 850px;
+      background-color: #F8F8F8;
+}
+
+.profileTitle {
+      margin-top: 34px;
+      margin-left: -620px;
+      /* margin-left: 100px;     */
+}
+
+.profileImg {
+      width: 50px;
+      height: 50px;
+      margin-top: 18px;
+      margin-left: 156px;
+}
+
+.accountUsername {
+      margin-top: 32px;
+      margin-left: -480px;
+      font-weight: bold;
+      font-size: 20px;
+}
+
+.contentTitleInner {
+      margin-top: 25px;
+      margin-left: 90px;
+      font-weight: bold;
+}
+
+#contentTitle {
+      width: 500px;
+      height: 30px;
+      margin-top: 17px;
+      margin-left: 10px;
+}
+
+#contentText {
+      width: 500px;
+      height: 30px;
+      padding-bottom: 200px;
+      margin-top: 20px;
+      margin-left: 10px;
+}
+
+.textTitleInner {
+      margin-top: 25px;
+      margin-left: 70px;
+      font-weight: bold;
+}
+
+.titleSDG {
+      font-weight: bold;
+      margin-left: 70px;
+      margin-right: 24px;
+      margin-top: 5px;
+}
+
+#selectBox {
+    width: 200px;
+    height: 30px;
+    margin-top: 20px;
+    margin-left: 10px;
+}
+
+.titleSubject {
+      font-weight: bold;
+      margin-left: 84px;
+      margin-top: 25px;
+}
+
+.titleJPEG {
+      font-weight: bold;
+      margin-left: 87px;
+      margin-right: 24px;
+      margin-top: 5px;
+}
+
+#photoURL {
+      width: 500px;
+      height: 30px;
+      margin-top: 10px;
+      margin-left: 10px;
+}
+
+#validatorContainer {
+      margin-left: -350px;
+      align-items: left;
+}
+
+.alert-danger {
+  background-color: #fed3d3;
+  color: #820000;
+  padding: 2px;
+  margin-left: 360px;
+  margin-right:103px;
+  text-align: left;
+}
+
+.alert-succes {
+  background-color: #d3fed5;
+  color: #42a948;
+  padding: 2px;
+  margin-left: 360px;
+  margin-right: 103px;
+  text-align: left;
+}
+
+.uploadButton {
+      width: 100px;
+      height: 40px;
+      background-color: #B4D2E7;
+      border: none;
+      border-radius: 10%;
+      cursor: pointer;
+      font-weight: bold;
+      margin-left: 10px;
+      margin-top: 10px;
+} 

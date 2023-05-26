@@ -1,0 +1,60 @@
+<!-- Start of comment payload -->
+<section id="commentPayload">
+    <section class="commentProfile">
+        <a href="/account"><img class="commentProfile" src="assets/user.png" alt="My Image" /></a>
+    </section>
+    <p class="userName">User one</p>
+    <p class="commentDate">3 years ago</p>
+    <p class="commentContent">
+        Hi there! I just wanted to say that I really enjoyed reading your post. Your insights were really
+        thought-provoking, and I appreciate the effort you put into sharing them. I particularly liked the way you
+        framed the issue at hand and the examples you provided to support your argument. Keep up the great work!
+    </p>
+    <section id="commentLike">
+        <button class="likeButton" (click)="likeOrUnlike()">
+            {{ isLiked ? 'Unlike' : 'Like' }}
+        </button>
+        <span class="likeCount">{{ likeCount }}</span>
+    </section>
+    <section class="ReplyButtonSection">
+        <button class="replyButton" (click)="isReplyOn = !isReplyOn; updateReplyTitle()" (click)="openReply()">
+            {{ ReplyText }}
+        </button>
+    </section>
+
+    <!--  Start of reply section  🡇 🡅 -->
+    <section id="replySection" *ngIf="submitReply">
+        <input
+            [(ngModel)]="replyText"
+            type="text"
+            id="replyInputField"
+            name="replyInputField"
+            placeholder="Add a reply..."
+        />
+        <p></p>
+        <section class="replyButtons">
+            <button (click)="clear()" class="replyPostButton">Cancel</button>
+            <button type="submit" class="replyPostButton">Reply</button>
+        </section>
+    </section>
+
+    <!-- start of replies section -->
+    <button class="repliesButton" (click)="isRepliesOn = !isRepliesOn; updateRepliesTitle()" (click)="openReplies()">
+        {{ RepliesText }}
+    </button>
+    <section class="RepliesButtonSection" *ngIf="submitReplies">
+        <section id="RepliesPayload">
+            <section class="replyProfile">
+                <a href="/account"><img class="commentProfile" src="assets/user.png" alt="My Image" /></a>
+            </section>
+            <section id="userReply">
+                <p class="userName">User two</p>
+                <p class="commentDate">2 years ago</p>
+                <p class="commentContent">
+                    Thanks for sharing your thoughts! It's always interesting to hear different perspectives and ideas.
+                    Keep the conversation going!
+                </p>
+            </section>
+        </section>
+    </section>
+</section>

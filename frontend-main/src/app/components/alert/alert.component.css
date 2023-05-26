@@ -1,0 +1,40 @@
+p {
+    font-family: Lato;
+}
+
+.alert,
+.alert-success,
+.alert-error,
+.alert-info,
+.alert-warning {
+    margin-bottom: 20px;
+    top: 0;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    border-radius: 0.25rem;
+    padding: 0.75rem 1.25rem;
+    color: #fff;
+    box-shadow: 0 5px 10px -5px rgba(0, 0, 0, 0.5);
+    transition: all 0.2s ease-in-out;
+    opacity: 0;
+    text-align: center;
+}
+
+.alert-success {
+    background: #28a745;
+}
+
+.alert-error {
+    background: #dc3545;
+}
+
+.alert-info {
+    background: #17a2b8;
+}
+
+.alert-warning {
+    background: #ffc107;
+}
+
+.visible {
+    opacity: 1;
+}

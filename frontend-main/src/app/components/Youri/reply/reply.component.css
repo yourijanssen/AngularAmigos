@@ -1,0 +1,113 @@
+.commentProfile {
+      width: 35px;
+      height: 35px;
+      margin-top: 5px;
+      margin-left: 0px;
+}
+
+.userName {
+      font-weight: bold;
+      margin-left: 60px;
+      margin-top: -25px;
+      width: 80px;
+      text-align: left;
+}
+
+.commentDate {
+      margin-left: 135px;
+      width: 80px;
+      margin-top: -34px;
+}
+
+.commentContent {
+      margin-top: -10px;
+      width: 500px;
+      margin-left: 60px;	
+      text-align: left;
+      font-size: small;
+}
+
+#commentLike {
+      margin-left: -70px;
+      font-size: small;
+}
+
+.likeButton {
+      cursor: pointer;
+      margin-left: -450px;
+      font-size: small;
+}
+
+.likeCount {
+      margin-left: 10px;
+      font-size: small;
+}
+
+.ReplyButtonSection {
+      margin-left: -380px;
+      margin-top: -20px;
+}
+
+.replyButton {
+      margin-left: 40px;
+      margin-top: -20px;
+}
+
+#replyInputField {
+      height: 30px;
+      width: 500px;
+      margin-top: 10px;
+      margin-bottom: auto;
+      margin-left: -115px;
+       border-top: none;
+       border-left: none;
+       border-right: none;
+       background-color: #F8F8F8;
+       border-color: #000100;
+}
+
+.commentReply {
+      width: 80px;
+      height: 30px;
+      background-color: #A1A6B4;
+      color: #000100;
+      border: none;
+      border-radius: 10%;
+      cursor: pointer;
+      font-weight: bold;
+      margin-right: 15px;
+}
+
+.replyButtons {
+      margin-right: -230px;
+}
+.replyPostButton {
+      width: 80px;
+      height: 30px;
+      margin-top: 0px;
+      background-color: #A1A6B4;
+      color: #000100;
+      border: none;
+      border-radius: 10%;
+      cursor: pointer;
+      font-weight: bold;
+      margin-right: 15px;
+}
+
+.repliesButton {
+      margin-top: 10px;
+      margin-right: 500px;
+}
+
+.replyProfile {
+      width: 35px;
+      height: 35px;
+      margin-top: 10px;
+      margin-left: 55px;
+}
+
+#userReply {
+      margin-left: 50px;
+      margin-top: 0px;
+}
+
