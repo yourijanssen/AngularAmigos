@@ -9,13 +9,3 @@ It has contributions from 5 people. For frontend developement we used Angular. F
 2. Start the frontend server by typing "ng serve";
 3. Start the backend server by typing "npm start";
 
-# My contribution
-
-I made the following features:
-- Navbar, footer, app routing
-- Unit & integration tests
-- UML class & sequence diagrams
-- Sequelize / mysql database switching
-- Upload page: http://localhost:4200/upload
-- Project page: http://localhost:4200/project
-
